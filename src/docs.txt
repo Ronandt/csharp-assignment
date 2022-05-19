@@ -1,0 +1,19 @@
+Bonus features/Changes
+-EntityFramework
+-Reflections when creating an instance, checking subclasses & object part of DbSet instead of hardcoding
+-Custom evolutions (when adding a new pokemon, there it is not necessary to specify custom evolutions as if there's no evolution stated. 
+If the pokemon is evolved without a stated evolution name, the evolution will be named "Evolved" + class name)
+-Apart from merging/sacrifice evolution criteria, the selected pokemon must have 100exp or above to evolve
+-HP and other stats will be multiplied by 2. This is changed for pokemon battle
+-Pokemon battles where there's also statistics and also added. If your pokemon loses the battle, the pokemon will be deleted, if it wins it will 
+be gained random amount of exp using random. Damage will be random with the ceiling damage (ATK stat) being the pokemon's damage. Critical damage will be shown 
+if damage is higher than 70% of the ceiling damage.
+-With the pokemon battle, the pokemon selected will fight with an enemy with a random skill, pokemon and stat
+-ID is introduced for easier tracking of pokemons
+-A menu to choose the pokemon is added (with the choice of pokemon depending on the reflections of it being a subclass of Pokemon + part of DbSet)
+-Instead of lowercase names as shown in the assignment, capitalised as the pokemon is a name
+-Added test new pokemon (Yuuki)
+-Other minor display changes or those that are not stated e.g when a pokemon evolves
+-Empty paramterised constructor is required for EFcore
+-Added random number generator System
+-Added system of pokeballs
